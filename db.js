@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // define the MongoDB connection URL
-const mongoURL ='mongodb+srv://sahanurlohapur:Bs4Sqj5ZXd3B0Q5Q@cluster0.il1nl3s.mongodb.net/hotels'// Replace 'mydtaabase with your dataabase name
+const mongoURL =process.env.MONGODB_URL;// Replace 'mydtaabase with your dataabase name
 
 
 //2set up mongodb connection
